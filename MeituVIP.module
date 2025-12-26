@@ -1,0 +1,10 @@
+#!name=Meitu VIP Exclusive
+#!desc=Mở khóa tính năng VIP cho Meitu & Chặn quảng cáo. Bản quyền thuộc về Quoc Khanh Media.
+#!author=Quoc Khanh Media
+
+[Script]
+# Mở khóa VIP & Chặn Ads Meitu
+Meitu_Exclusive = type=http-response,pattern=^https?:\/\/.*meitu.*\.com\/(vip|user|ad|startup|subs|launch),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/adminltqk28280828/meituvipquockhanhmedia/main/MeituVIP.js
+
+[MITM]
+hostname = %APPEND% api.meitu.com, *.meitu.com, *.meitustat.com, h5.meitu.com
